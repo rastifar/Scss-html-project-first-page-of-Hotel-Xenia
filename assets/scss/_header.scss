@@ -1,0 +1,149 @@
+.header {
+  position: absolute;
+  width: 100vw;
+  min-height: 15vh;
+  background-color: $navBackgroundColor;
+  z-index: 10;
+  color: $navColor;
+  right: 0px;
+  a {
+    color: $navColor;
+  }
+  li {
+    padding: 0 10px;    
+  }  
+  @include up-size(1000) {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+.subMenu{
+  display: none;
+  display: none;
+  position: absolute;
+  background-color: $navBackgroundColor;  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: -1;
+  a {   
+    color: $navColor;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  li:hover{    
+    background-color: $titleColor;    
+    }
+}
+.liItem:hover>.subMenu,.subitem:hover>.subMenu{
+  display: block;
+}
+.logo img {
+  width: 6rem;
+  margin: 1.5rem 0;
+}
+
+.toggle-and-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hambergur {
+  width: $hamburger;
+  height: 1px;
+  display: block;
+  background-color: $navColor;
+  margin: 5px 0px;
+  border-radius: $border-radius;
+}
+.hambergurMenu.is-active .hambergur:nth-child(1) {
+  transform: translateY(6px) rotate(-45deg);
+}
+.hambergurMenu.is-active .hambergur:nth-child(2) {
+  opacity: 0;
+}
+.hambergurMenu.is-active .hambergur:nth-child(3) {
+  transform: translateY(-6px) rotate(45deg);
+}
+.booknow,
+.extra {
+  margin-right: 15px; 
+}
+.btn {
+  @include before-covering($booknowColor);
+  background-color: $booknowColor;
+  border: 1px solid $booknowColor;
+  min-height: 37px;
+  min-width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: "";
+    @include covering(white);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #c7c732;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+}
+.hambergurMenu {
+  margin-right: 0px;
+}
+.side{
+  @include up-size(1000) {
+    margin-right: 5px;
+  }
+}
+.sidenav {
+  line-height: 1.8;
+  z-index: 5;
+  background-color: $sideNavColor;
+  color: $navColor;
+  font-family: sans-serif;
+  position: fixed;
+  right: 0; 
+  width: 0;
+  padding-top: 15vh;
+  line-height: 2;
+  overflow: auto;
+  li {
+    font-family: sans-serif;
+    width: 100%;
+    line-height: 2;
+    padding-left: 10px;
+  }
+  .innerUl {
+    border-left: 1px solid $navColor;
+    margin-left: 22px;  
+    padding-top: 10px;
+    padding-left: 16px;
+  }
+  p{
+    padding-left: 13px;
+  }
+}
+
+.append-nav{
+  a{
+    color:$navColor;
+  }
+  display: none;
+  
+  flex-direction: column;
+}
+.navBarMenu{
+  @include up-size(1000) {
+    display: none;
+  }
+}

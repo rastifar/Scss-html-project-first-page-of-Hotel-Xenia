@@ -1,0 +1,127 @@
+.cartOuter {
+  width: 100%;  
+  // margin: 0px 5px;
+  @include up-size(766) {
+    // flex-basis: 100%;
+    flex-direction: column;
+  }
+}
+.cart {
+   width: 31%;
+  //flex-basis: 350px; 
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: $navColor;
+
+  @include up-size(766) {
+    width: 100%;
+    height: 70vh;
+    // padding: 29% 0%;
+    // margin-bottom: 10px;   
+    background-size: cover;    
+    margin:3% 5%;
+  }
+  h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    font-size: 32px;
+  }
+  p {
+    background-color: $navBackgroundColor;
+    text-align: justify;
+    font-size: 16px;
+    position: absolute;
+    bottom: -500px;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 70vh;
+    transition: 0.6s;
+    line-height: 100%;
+    padding-top: 90%;
+  }
+  &:hover h2 {
+    visibility: hidden;
+  }
+  &:hover P {
+    bottom: 0;
+  }
+  
+}
+
+.cart-1 {
+  background-image: url("../Pic/cart1.jpg");
+  @include before-covering(transparent);
+  &:before {
+    content: "XENIA hosts an amazing place to relax; we call it paradise you may call it XENIA Spa. We would love to introduce you to this amazing relaxing and refreshing experience.";
+    @include covering($navBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $navColor;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+}
+.cart-2 {
+  background-image: url("../Pic/cart2.jpg");
+  @include before-covering(transparent);
+  &:before {
+    content: "Keep up with your fitness routine whilst you’re away with our free in-house gym. Packed with cardio and resistance equipment and free weights, you can unwind after a busy day in the capital at the 5-star XENIA Hotel.";
+    @include covering($navBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $navColor;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  
+}
+.cart-3 {
+  background-image: url("../Pic/cart3.jpg");
+  @include before-covering(transparent);
+  &:before {
+    content: "The XENIA Hotel Restaurant has been renovated and is ready to welcome you! For breakfast or lunch, the elegant environment of the XENIA Roof Garden Restaurant creates a tranquil atmosphere, while dinner is perfect when the city lights come on.";
+    @include covering($navBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $navColor;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  
+}

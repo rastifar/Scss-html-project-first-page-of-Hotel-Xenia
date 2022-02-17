@@ -1,0 +1,33 @@
+$colorPallet: (
+  successColor: #6fb586,
+  warningColor: #f90,
+  dangerColor: #ff5600,
+  navBackgroundColor: rgba(0, 0, 0, 0.4),
+  sideNavColor:#000000,
+  navColor: #fff,
+  titleColor: rgb(50, 50, 50),
+  textColor: rgb(169, 139, 169),
+  qutoColor: rgb(196, 196, 196),
+  booknowColor: #c5bc55,
+  lightGray: #1f1f2c,
+  readMore:#315041,
+  backToTopBg: rgba(0,0,0,0.7),
+);
+
+$successColor : map-get($colorPallet,successColor);
+$warningColor: map-get($colorPallet,warningColor);
+$dangerColor : map-get($colorPallet,dangerColor);
+$navBackgroundColor : map-get($colorPallet,navBackgroundColor);
+$navColor: map-get($colorPallet,navColor);
+$titleColor :  map-get($colorPallet,titleColor);
+$textColor: map-get($colorPallet,textColor);
+$qutoColor: map-get($colorPallet,qutoColor);
+$booknowColor: map-get($colorPallet,booknowColor);
+$lightGray :  map-get($colorPallet,lightGray);
+$sideNavColor: map-get($colorPallet,sideNavColor);
+$readMore: map-get($colorPallet,readMore);
+$backToTopBg: map-get($colorPallet,backToTopBg);
+
+
+$hamburger:25px;
+$border-radius:10px;

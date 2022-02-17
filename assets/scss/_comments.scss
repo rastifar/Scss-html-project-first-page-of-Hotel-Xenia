@@ -1,0 +1,83 @@
+.commentContent {
+    position: relative;
+    @include up-size(766) {
+      margin-top: 15%;
+    }
+  }
+  .welcomeBackground {
+    // font-family: Playfair Display,sans-serif;
+    //it should not be selectable handle it
+    text-transform: uppercase;
+    font-size: 140px;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1 !important;
+    user-select: none;
+    pointer-events: none;
+    color: #E7E7E7;
+    z-index: -1;
+    @include up-size(766) {
+      display: none;
+    }
+  }
+  .commentContent h2 {
+    text-align: center;
+    margin-bottom: 4px;
+    //   color: inherit;
+    //   font-family: Playfair Display, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 13.5px;
+    font-size: 40px;
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    line-height: 1.5;
+    display: block;
+  }
+  .inner {
+    width: 65%;
+    margin: 10px auto;
+  }
+  .commentBody h4 {
+    // font-family: Playfair Display,sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 13.5px;
+    text-align: center;
+  }
+  .commentBody p {
+    color: #323232;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    opacity: 0.6;
+  }
+  
+  .richard {
+    background-image: url("../Pic/richartdComment.jpg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 5% auto;
+  
+  }
+  .pic span {
+    display: block;
+    margin-bottom: 8%;
+  }

@@ -1,0 +1,90 @@
+.footer {
+    margin-top: 10px;
+    background-color: #15151E;
+    color: $navColor;
+    width: 100%;
+    overflow: hidden;
+  }
+  .footer-top {
+    margin:30px auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-top div i::before {
+    border: 1px solid $navColor;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+  }
+  .footer-bottom{
+    background-color: #171720;  
+    overflow: hidden;
+    @include up-size(766) {
+      text-align: center; 
+      flex-direction: column;
+    }
+  }
+  .text-left{
+    margin:10px auto;
+    margin-left: 0; 
+    @include up-size(766) {
+      margin: 20px auto; 
+    }
+  }
+  .text-center{
+    text-align: center; 
+    margin:10px auto;
+  }
+  .text-right{
+    text-align: right;
+    margin-right: 0;
+  }
+  .text-right li{
+    margin: 10px 5px;
+  }
+  #btnBackToTop {
+    display: inline-block;
+    background-color:$backToTopBg;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: all .3s ease;
+    &::after{
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 50px;
+      color: $navColor;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      background-color: $backToTopBg;
+    }
+
+  }
+  #btnBackToTop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .footer-faIcon{
+    @include up-size(766) {
+      flex-direction: column; 
+    }
+  }

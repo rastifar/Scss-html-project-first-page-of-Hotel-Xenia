@@ -1,0 +1,58 @@
+@import "variable";
+
+* {
+    @include overall;
+  }
+  
+@font-face {
+    font-family: "Playfair";
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+    font-weight: normal;
+  }
+  .wrapper {
+    position: relative;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  .flex-column{
+    flex-direction: column;
+  }
+  .space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .space-around {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .center {
+    text-align: center !important;
+  }
+  .flex-basis-50{
+    flex-basis: 50%;
+  }
+  .flex-basis-20{
+    flex-basis: 23%;
+    align-self: flex-start;
+  }
+  .flex-basis-80{
+    flex-basis: 73%;
+    align-self: flex-start;
+  }
+  .linkAnimation {
+    cursor: pointer;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      margin-top: 4px;
+      background: $successColor;
+      transition: width 0.3s;
+    }
+    &:hover::after {
+      width:100%;
+    }
+  }
