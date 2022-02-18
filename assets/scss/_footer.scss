@@ -4,6 +4,9 @@
     color: $navColor;
     width: 100%;
     overflow: hidden;
+    @include up-size(380) {
+      font-size: 10px; 
+    }
   }
   .footer-top {
     margin:30px auto;  
@@ -27,6 +30,7 @@
     @include up-size(766) {
       text-align: center; 
       flex-direction: column;
+      font-size: 10px;
     }
   }
   .text-left{

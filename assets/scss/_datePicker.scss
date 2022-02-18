@@ -17,15 +17,16 @@
   }
 }
 .dateContent {
-  width: 70%;
+  width: 100%;
   margin: 30px auto;
+  
   @include up-size(766) {
     width: 100%;
     flex-direction: column;
   }
 }
-.checkIn,.checkOut {
-  width: 47%;
+.checkIn,.checkOut,.rooms {
+  width: 32%;
   @include up-size(766) {
     width: 100%;
   }
@@ -46,7 +47,7 @@
 }
 .dateContent input::placeholder {
   text-align: center;
-  font-size: 24px;
+  font-size: 14px;
 }
 .btnDate {
   display: grid;
@@ -77,6 +78,11 @@
   margin-left: 10%;
   animation-name: fadeIn_Modal;
   animation-duration: 0.8s;  
+  @include up-size(766) {
+    width: 97%;
+   margin:0 auto;
+  }
+
 }
 
 .modalHeader {
@@ -107,6 +113,9 @@ width: 100%;
 .content th, td {
   padding: 15px;
   text-align: center;
+  @include up-size(766) {
+    padding: 2px;
+  }
 }
 
 .modalHeader{

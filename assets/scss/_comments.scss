@@ -1,7 +1,25 @@
 .commentContent {
     position: relative;
+    h2 {
+      text-align: center;
+      margin-bottom: 4px;
+      //   color: inherit;
+      //   font-family: Playfair Display, sans-serif;
+      font-weight: 700;
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-top: 27px;
+      margin-bottom: 13.5px;
+      font-size: 40px;
+    }
     @include up-size(766) {
-      margin-top: 15%;
+      margin-top: 25%;
+    }
+    @include up-size(580) {
+      margin-top: 33%;
+    }
+    @include up-size(420) {
+      margin-top: 41%;
     }
   }
   .welcomeBackground {
@@ -22,18 +40,7 @@
       display: none;
     }
   }
-  .commentContent h2 {
-    text-align: center;
-    margin-bottom: 4px;
-    //   color: inherit;
-    //   font-family: Playfair Display, sans-serif;
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
-    margin-top: 27px;
-    margin-bottom: 13.5px;
-    font-size: 40px;
-  }
+  
   .subtitle {
     font-weight: 300;
     font-size: 13px;

@@ -16,6 +16,9 @@
   position: relative;
   overflow: hidden;
   color: $navColor;
+  div{
+    padding: 10px;
+  }
 
   @include up-size(766) {
     width: 100%;
@@ -43,6 +46,7 @@
     transition: 0.6s;
     line-height: 100%;
     padding-top: 90%;
+   
   }
   &:hover h2 {
     visibility: hidden;

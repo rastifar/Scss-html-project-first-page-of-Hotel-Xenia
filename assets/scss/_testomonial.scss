@@ -8,10 +8,15 @@
   h3 {
     font-size: 3rem;
     margin-top: 5%;
+    @include up-size(420) {
+      font-size: 2rem;
+      
+    }
   }
   span {
     margin-bottom: 2%;
   }
+ 
 }
  
 
@@ -26,12 +31,22 @@
   margin:0 auto;
   @include up-size(1000) {
     width: 100%; 
-    height: 39vh; 
+    height: 30vh; 
   }
   @include up-size(766) {
     width: 100%; 
-    height: 73vh; 
+    height: 30vh; 
+    
   } 
+  @include up-size(480) {
+    width: 100%; 
+    height: 50vh; 
+    
+  }
+  @include up-size(320) {
+    width: 100%; 
+    height: 71vh;     
+  }
 }
 .testimonials_list_text {
   margin-left: 0;
@@ -39,6 +54,10 @@
   h4 {
     font-size: 2rem;
     margin-bottom: 2%;
+    @include up-size(450) {
+      font-size: 1.2rem;
+      
+    }
   }
 }
 
@@ -49,6 +68,10 @@
   line-height: 2;
   margin-bottom: 4%;
   font-size: 1.1rem;
+  @include up-size(766) {
+    line-height: 1.4;
+    
+  } 
 }
 
 .testimonial_author_role {
